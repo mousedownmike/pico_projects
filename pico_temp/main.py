@@ -1,10 +1,8 @@
-# noinspection PyPackageRequirements
 import machine
-from machine import Pin
 import time
 
-led = Pin(25, Pin.OUT)
-led_external = Pin(15, machine.Pin.OUT)
+led = machine.Pin(25, machine.Pin.OUT)
+led_external = machine.Pin(15, machine.Pin.OUT)
 sensor_temp = machine.ADC(4)
 button = machine.Pin(14, machine.Pin.IN, machine.Pin.PULL_DOWN)
 conversion_factor = 3.3 / 65535

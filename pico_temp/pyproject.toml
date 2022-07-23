@@ -8,6 +8,8 @@ license = "MIT"
 [tool.poetry.dependencies]
 python = "^3.8"
 pyserial = "^3.5"
+docopt = "^0.6.2"
+adafruit-ampy = "1.0.5"
 
 [tool.poetry.dev-dependencies]
 
