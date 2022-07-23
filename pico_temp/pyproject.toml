@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "pico_temp"
+version = "0.1.0"
+description = "Onboard Pico temperature output."
+authors = ["Mike Dalrymple <mike@mousedown.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pyserial = "^3.5"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
