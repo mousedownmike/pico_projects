@@ -33,6 +33,11 @@ while True:
     led(1)
     if button.value() == 1:
         led(0)
+        time.sleep_ms(100)
+        led(1)
+        time.sleep_ms(800)
+        led(0)
+        time.sleep_ms(100)
         reading = sensor_temp.read_u16() * conversion_factor
         celsius = 27 - (reading - 0.706)/0.001721
         fahrenheit = celsius * (9 / 5) + 32
